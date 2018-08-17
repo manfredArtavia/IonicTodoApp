@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-navbar color="primary">
+      <ion-title>Pending!</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+    <img src="../../assets/imgs/pendientes.jpg" alt="">
+    <ion-list>
+      <button ion-item *ngFor="let list of todoService.lists" (click)="selectedList(list)">
+        {{ list.title }}
+      </button>  
+    </ion-list>
+  </ion-content>
+  
