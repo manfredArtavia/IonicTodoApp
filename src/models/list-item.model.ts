@@ -1,4 +1,4 @@
-export class TodoList {
+export class ListItem {
     desc: string;
     done: boolean;
     constructor( desc: string  ) {

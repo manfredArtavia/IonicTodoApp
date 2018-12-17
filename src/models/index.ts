@@ -1,2 +1,2 @@
-export { TodoList } from './todo-list-item.model';
+export { ListItem } from './list-item.model';
 export { List } from './list.model';

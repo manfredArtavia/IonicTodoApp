@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { PendingPage } from '../pending/pending.component';
-import { DonePage } from './../done/done.component';
+import { DonePage } from '../done/done.component';
 
 @Component({
   templateUrl: 'tabs.html'

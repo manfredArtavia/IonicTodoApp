@@ -1,11 +1,11 @@
-import { TodoList } from './todo-list-item.model';
+import { ListItem } from './list-item.model';
 export class List {
     id: number;
     title: string;
     createdAt: Date;
     doneAt: Date;
     done: boolean;
-    items: TodoList[];
+    items: ListItem[];
 
     constructor(title: string) {
         this.title = title;
