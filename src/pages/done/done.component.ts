@@ -5,9 +5,6 @@ import { Component } from '@angular/core';
     templateUrl: './done.component.html'
 })
 export class DonePage {
-    constructor() {
-        console.log('hey from done!');
-        
-    }
+    constructor() {}
 }
 

@@ -13,10 +13,10 @@ export class AddPage {
     constructor(
         public todoService: TodoService,
         private navParams: NavParams) {
-        const title = this.navParams.get('title');
-        if (this.navParams.get('title')) {
+        if (this.navParams.get('list')) {
             this.list = this.navParams.get('list');
         } else {
+            const title = this.navParams.get('title');
             this.list = new List(title);
             this.todoService.addList(this.list);
         }
@@ -27,6 +27,7 @@ export class AddPage {
             return;
         }
         const newItem = new ListItem(this.itemName);
+        this.itemName = '';
         this.list.items.push(newItem);
         this.todoService.saveStorage();
     }

@@ -1,3 +1,5 @@
+import { ListsComponent } from '../components/lists/lists.component';
+import { FilterDonePipe } from './../pipes/filter-done/filter-done';
 import { AddPage } from '../pages/add/add.component';
 import { TodoService } from '../services/todo.service';
 import { NgModule, ErrorHandler } from '@angular/core';
@@ -17,7 +19,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     PendingPage,
     DonePage,
-    AddPage
+    AddPage,
+    FilterDonePipe,
+    ListsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     PendingPage,
     DonePage,
-    AddPage
+    AddPage,
+    ListsComponent
   ],
   providers: [
     StatusBar,

@@ -21,6 +21,10 @@ export class PendingPage {
         })
     }
 
+    deleteList(id: number) {
+        this.todoService.deleteList(id);
+    }
+
     addPending() {
         // this.navController.push(AddPage);
         const prompt = this.alertController.create({

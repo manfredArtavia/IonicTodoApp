@@ -6,12 +6,7 @@
   
   <ion-content>
     <img src="../../assets/imgs/pendientes.jpg" alt="">
-    <ion-list>
-      <button ion-item *ngFor="let list of todoService.lists" (click)="selectedList(list)">
-        {{ list.title }}
-      </button>  
-    </ion-list>
-
+    <app-lists [done]="false"></app-lists>
     <ion-fab bottom right>
       <button ion-fab (click)="addPending()">
         <ion-icon name="add"></ion-icon>
